@@ -1,0 +1,24 @@
+:root {
+  --cream: #faf7f2;
+  --cream-deep: #f2ebe3;
+  --blush: #e8d1cc;
+  --rose: #c99292;
+  --lavender-gray: #c8bdd0;
+  --rose-gold: #b88978;
+  --ink: #3d3230;
+  --muted: #716967;
+  --white: #fffdf9;
+  --line: rgba(61, 50, 48, 0.16);
+  --line-light: rgba(255, 253, 249, 0.32);
+  --shadow: 0 24px 70px rgba(74, 55, 50, 0.12);
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-serif-tc: 'Noto Serif TC', 'PMingLiU', serif;
+  --font-body: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  --container: 1280px;
+  --section-space: clamp(5.5rem, 10vw, 10rem);
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+}

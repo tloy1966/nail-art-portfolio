@@ -1,0 +1,9 @@
+@keyframes reveal { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes menu-in { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+.hero-section__copy > * { animation: reveal .8s ease both; }
+.hero-section__copy > *:nth-child(2) { animation-delay: .1s; }.hero-section__copy > *:nth-child(3) { animation-delay: .2s; }.hero-section__copy > *:nth-child(4) { animation-delay: .3s; }
+.hero-visual { animation: reveal 1s .18s ease both; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

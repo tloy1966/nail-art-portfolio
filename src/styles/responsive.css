@@ -1,0 +1,38 @@
+@media (max-width: 1100px) {
+  .desktop-nav { display: none; }.menu-button { display: grid; }.header-booking { margin-left: auto; }
+  .hero-section { min-height: auto; }.hero-section__grid { min-height: 760px; grid-template-columns: 1fr .78fr; gap: 3rem; }.hero-visual__label { right: -1rem; }
+  .portfolio-card { grid-column: span 6; }.portfolio-card--landscape { grid-column: span 12; }
+  .services-grid { grid-template-columns: repeat(2,1fr); }
+  .about-section__grid { gap: 4rem; }.about-visual blockquote { right: -1rem; width: 90%; }
+  .instagram-grid { grid-template-columns: repeat(3,1fr); }
+}
+
+@media (max-width: 767px) {
+  html { scroll-padding-top: 68px; }.container { width: min(calc(100% - 2rem), var(--container)); }.site-header__inner { height: 68px; }.header-booking { display: none; }
+  .hero-section { min-height: 100svh; padding: 104px 0 58px; background: linear-gradient(180deg, var(--cream) 0 57%, var(--blush) 57% 100%); }
+  .hero-section__grid { min-height: auto; grid-template-columns: 1fr; gap: 2.5rem; }.hero-section__copy { padding: 0; }.hero-section h1 { font-size: clamp(2.75rem, 12vw, 4.6rem); }.hero-section__actions { display: grid; grid-template-columns: 1fr 1fr; }.hero-section__actions .button { width: 100%; }.hero-section__signature { margin-top: 1.5rem; }
+  .hero-visual { width: 90%; margin-right: 7%; }.hero-visual__frame { aspect-ratio: .86; border-radius: 46% 46% 8% 8% / 28% 28% 7% 7%; }.hero-visual__index { top: -3rem; right: -1rem; }.hero-visual__label { right: -8%; bottom: 10%; min-height: 68px; }.hero-visual__caption, .hero-scroll { display: none; }
+  .brand-features > .container { grid-template-columns: 1fr; gap: 2rem; }.brand-features__list li { grid-template-columns: 2rem 1.7rem 1fr; gap: .8rem; }
+  .portfolio-filters { margin-right: -1rem; }.portfolio-grid { grid-template-columns: repeat(2,1fr); gap: .65rem; }.portfolio-card, .portfolio-card--landscape { grid-column: span 1; }.portfolio-card--landscape button { aspect-ratio: .86; }.portfolio-card__overlay { min-height: 55%; padding: .8rem; transform: none; opacity: 1; }.portfolio-card__open { display: none; }.portfolio-card__shine { inset: .35rem; border-color: rgba(255,255,255,.4); }
+  .lightbox-backdrop { padding: .5rem; }.lightbox { max-height: calc(100svh - 1rem); grid-template-columns: 1fr; grid-template-rows: minmax(0, 61svh) auto; overflow-y: auto; }.lightbox__media { min-height: 0; }.lightbox__content { padding: 1.4rem; }.lightbox__content h2 { margin-bottom: .5rem; }.lightbox__content p { margin-bottom: .8rem; }.lightbox__arrow { width: 44px; height: 44px; }
+  .featured-list { gap: 6rem; }.featured-item, .featured-item:nth-child(even) { display: flex; flex-direction: column; align-items: stretch; gap: 2rem; }.featured-item:nth-child(even) .featured-item__media { order: initial; }.featured-item__media, .featured-item--3 .featured-item__media { width: 100%; aspect-ratio: .9; }.featured-item--3 .featured-item__content { width: auto; padding: 0; margin: 0; background: transparent; }.featured-item__number { top: -3rem; }
+  .services-grid { grid-template-columns: 1fr; }.service-card { min-height: auto; }
+  .about-section__grid { grid-template-columns: 1fr; gap: 4rem; }.about-visual { padding: 0 1rem 5rem 2rem; }.about-visual blockquote { right: 0; }.about-content__columns, .about-content__care { grid-template-columns: 1fr; gap: 1rem; }.about-stats strong { font-size: 1.8rem; }
+  .booking-timeline { grid-template-columns: 1fr; gap: 0; }.booking-timeline::before { top: 2rem; bottom: 2rem; left: 28px; width: 1px; height: auto; }.booking-timeline li { display: grid; min-height: 145px; grid-template-columns: 58px 1fr; grid-template-rows: auto auto 1fr; column-gap: 1.2rem; padding: 0; text-align: left; }.booking-timeline__icon { grid-row: 1 / 4; margin: 0; }.booking-timeline__number, .booking-timeline h3, .booking-timeline p { grid-column: 2; }.booking-timeline h3 { margin: .25rem 0; }
+  .testimonials-track { grid-auto-columns: 88%; }.testimonial { min-height: 360px; }
+  .instagram-section__header { align-items: flex-start; flex-direction: column; gap: 1rem; }.instagram-grid { grid-template-columns: repeat(2,1fr); }
+  .contact-section__inner { grid-template-columns: 1fr; }.contact-section__actions { display: grid; }.contact-section__actions .button { width: 100%; }
+  .site-footer__main { grid-template-columns: 1fr 1fr; }.site-footer__brand { grid-column: 1 / -1; }.site-footer__bottom { align-items: flex-start; flex-direction: column; gap: 1rem; }
+}
+
+@media (max-width: 479px) {
+  .eyebrow { letter-spacing: .13em; }.hero-section__actions { grid-template-columns: 1fr; }.hero-visual { width: 96%; margin-right: 4%; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 1rem; }.portfolio-card--square button, .portfolio-card--landscape button { aspect-ratio: 1; }.portfolio-card--portrait button, .portfolio-card--tall button { aspect-ratio: .82; }
+  .lightbox { grid-template-rows: minmax(0, 55svh) auto; }.lightbox__close { top: .6rem; right: .6rem; }.lightbox__arrow--left { left: .5rem; }.lightbox__arrow--right { right: .5rem; }
+  .about-stats { gap: .5rem; }.about-stats div { padding-left: .6rem; }.about-stats strong { font-size: 1.55rem; }.about-stats span { font-size: .65rem; }
+  .testimonials-track { grid-auto-columns: 94%; }.site-footer__main { grid-template-columns: 1fr; }.site-footer__brand { grid-column: auto; }
+}
+
+@media (min-width: 1440px) {
+  :root { --container: 1360px; }.hero-section__grid { grid-template-columns: 1fr .75fr; }
+}
